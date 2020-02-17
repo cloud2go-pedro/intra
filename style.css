@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
     font-family: 'Segoe UI Regular';
     font-style: normal;
     font-weight: normal;
@@ -421,9 +421,9 @@ footer .footer-area nav {
     justify-content: space-between;
 }
 
-footer .footer-area .footer-col {
-/*  width: 50%;*/
-}
+/* footer .footer-area .footer-col {
+    width: 50%;
+} */
 
 
 
@@ -435,6 +435,7 @@ footer .footer-area .footer-col li img {
     width: 25px;
     margin: -3px 5px 0 0;
 }
+
 /*
 footer .footer-area .footer-col:first-child {
     padding: 0 10% 0 0;
@@ -454,13 +455,49 @@ footer .footer-area .footer-col h3 {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 300;
-    margin-bottom: 0px;
+    margin: 0;
+}
+
+/* @media only screen and (min-width: 1079px) {
+    footer .footer-area .footer-col::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -20px;
+        width: 2px;
+        background-color: #fff;
+        height: 100%;
+    }
+} */
+
+@media only screen and (max-width: 1080px) {
+    footer .footer-area .footer-col::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 0;
+        width: 95%;
+        background-color: #fff;
+        height: 2px;
+    }
+}
+
+footer .footer-area .footer-col {
+    position: relative;
+}
+
+footer .footer-area .footer-col:first-child::before {
+    display: none;
 }
 
 footer .footer-area nav ul li {
     margin-bottom: 10px;
-    margin-left: 20px;
     color: #fff;
+}
+
+footer .footer-area .footer-col:last-child nav ul li {
+    margin-left: 20px;
 }
 
 footer .footer-area nav ul {
@@ -470,7 +507,7 @@ footer .footer-area nav ul {
 }
 
 .footer .footer-area * {
-	text-align: center !important;
+    text-align: center !important;
 }
 
 footer .footer-area .footer-col:last-child nav ul li:before {
@@ -493,7 +530,7 @@ footer .footer-area .footer-col:first-child nav ul li:before {
 
 footer .footer-area .footer-col:first-child nav ul li {
     margin-left: 0px;
-    margin-bottom: 17px;
+    /* margin-bottom: 17px; */
 }
 
 footer .footer-area nav ul li a {
@@ -866,57 +903,71 @@ h3 {
     .main-menu {
         display: none;
     }
+
     .main-header .top-header .area-topheader .search input {
         width: 100%;
     }
+
     .main-header .top-header .area-topheader .logotipo img {
         width: 100%;
         padding: 10px;
     }
+
     .main-content,
     .sidebar-left {
         width: 100%;
         float: none;
         padding: 0 15px;
     }
+
     .col-80,
     .col-20 {
         width: 100%;
         float: none;
     }
+
     #webpartNoticias .noticiasItem {
         width: 100%;
         padding-bottom: 40px;
         align-items: center;
     }
+
     .container-dublerow {
         display: block;
     }
+
     footer .footer-area,
     footer .footer-area nav {
         display: block;
     }
+
     footer .footer-area .footer-col h3,
     footer .footer-area nav ul li {
         padding: 8px 0px 0 30px;
     }
-    footer .footer-area .footer-col:last-child,
+
+    /* footer .footer-area .footer-col:last-child,
     footer .footer-area .footer-col:first-child {
         padding: 0 0 0 0;
-    }
+    } */
     footer .footer-area .footer-col {
         width: 100%;
         padding: 0 15px;
     }
+
     footer .footer-area .footer-col {
         border: none;
+        padding: 10px 0;
     }
+
     #ayBtnToolBar {
         display: none;
     }
+
     #webpartNoticias .areaWebpart {
         padding: 30px 10px 10px 10px;
     }
+
     #webpartQuickAccess .areaWebpart li {
         width: 11.1%;
         padding: 3px;
