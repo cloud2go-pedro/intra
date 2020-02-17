@@ -7,7 +7,8 @@ Para criar a página mestra diretamente a partir desse arquivo HTML, basta edita
 
 -->
 <!DOCTYPE html[]>
-<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+<html lang="pt-br" xmlns:mso="urn:schemas-microsoft-com:office:office"
+    xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
 
 <head>
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
@@ -91,13 +92,15 @@ Para criar a página mestra diretamente a partir desse arquivo HTML, basta edita
     <!--SPM:<%@Register Tagprefix="wssucw" TagName="Welcome" Src="~/_controltemplates/15/Welcome.ascx"%>-->
     <!--MS:<SharePoint:SPSecurityTrimmedControl runat="server" HideFromSearchCrawler="true" EmitDiv="true">-->
     <div id="TurnOnAccessibility" style="display:none" class="s4-notdlg noindex">
-        <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
+        <a id="linkTurnOnAcc" href="#" class="ms-accessible ms-acc-button"
+            onclick="SetIsAccessibilityFeatureEnabled(true);UpdateAccessibilityUI();document.getElementById('linkTurnOffAcc').focus();return false;">
             <!--MS:<SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnonaccessibility%&gt;" EncodeMethod="HtmlEncode">-->
             <!--ME:</SharePoint:EncodedLiteral>-->
         </a>
     </div>
     <div id="TurnOffAccessibility" style="display:none" class="s4-notdlg noindex">
-        <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button" onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
+        <a id="linkTurnOffAcc" href="#" class="ms-accessible ms-acc-button"
+            onclick="SetIsAccessibilityFeatureEnabled(false);UpdateAccessibilityUI();document.getElementById('linkTurnOnAcc').focus();return false;">
             <!--MS:<SharePoint:EncodedLiteral runat="server" text="&lt;%$Resources:wss,master_turnoffaccessibility%&gt;" EncodeMethod="HtmlEncode">-->
             <!--ME:</SharePoint:EncodedLiteral>-->
         </a>
@@ -106,7 +109,9 @@ Para criar a página mestra diretamente a partir desse arquivo HTML, basta edita
     <div id="ms-designer-ribbon">
         <!--SID:02 {Faixa de Opções}-->
         <!--PS: Início da VISUALIZAÇÃO SOMENTE LEITURA (não modificar) -->
-        <div class="DefaultContentBlock" style="background:rgb(0, 114, 198); color:white; width:100%; padding:8px; height:64px; overflow:hidden;">A faixa de opções do SharePoint estará aqui quando o arquivo for visualizado ou aplicado ao seu site.</div>
+        <div class="DefaultContentBlock"
+            style="background:rgb(0, 114, 198); color:white; width:100%; padding:8px; height:64px; overflow:hidden;">A
+            faixa de opções do SharePoint estará aqui quando o arquivo for visualizado ou aplicado ao seu site.</div>
         <!--PE: Fim da VISUALIZAÇÃO SOMENTE LEITURA -->
     </div>
     <!--MS:<SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AnonymousUsersOnly">-->
@@ -127,19 +132,32 @@ Para criar a página mestra diretamente a partir desse arquivo HTML, basta edita
                                 <!--SPM:<SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox"/>-->
                                 <!--PS: Início da VISUALIZAÇÃO SOMENTE LEITURA (não modificar)-->
                                 <div class="ms-webpart-chrome ">
-                                    <div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPart" width="100%" class="ms-WPBody noindex " OnlyForMePart="true" allowDelete="false" style="">
-                                        <div componentid="ctl00_SmallSearchInputBox1_csr" id="ctl00_SmallSearchInputBox1_csr">
+                                    <div WebPartID="00000000-0000-0000-0000-000000000000" HasPers="true" id="WebPart"
+                                        width="100%" class="ms-WPBody noindex " OnlyForMePart="true"
+                                        allowDelete="false">
+                                        <div componentid="ctl00_SmallSearchInputBox1_csr"
+                                            id="ctl00_SmallSearchInputBox1_csr">
                                             <div id="SearchBox" name="Control">
-                                                <div class="ms-srch-sb ms-srch-sb-border" id="ctl00_SmallSearchInputBox1_csr_sboxdiv"><input type="text" value="Pesquisar este Site..." maxlength="2048" accessKey="S" title="Pesquisar este Site..." id="ctl00_SmallSearchInputBox1_csr_sbox" autocomplete="off" autocorrect="off" class="ms-srch-sb-prompt ms-helperText"
-                                                    />
-                                                    <a title="Pesquisar" class="ms-srch-sb-searchLink" id="ctl00_SmallSearchInputBox1_csr_SearchLink" href="javascript: {}"><img src="https://labcloud2go.sharepoint.com/sites/AYoshiiDev/_catalogs/masterpage/assets/images/search.png" class="ms-srch-sb-searchImg" id="searchImg" style="opacity: 0;" alt="Search" /></a>
+                                                <div class="ms-srch-sb ms-srch-sb-border"
+                                                    id="ctl00_SmallSearchInputBox1_csr_sboxdiv"><input type="text"
+                                                        value="Pesquisar este Site..." maxlength="2048" accessKey="S"
+                                                        title="Pesquisar este Site..."
+                                                        id="ctl00_SmallSearchInputBox1_csr_sbox" autocomplete="off"
+                                                        autocorrect="off" class="ms-srch-sb-prompt ms-helperText" />
+                                                    <a title="Pesquisar" class="ms-srch-sb-searchLink"
+                                                        id="ctl00_SmallSearchInputBox1_csr_SearchLink"
+                                                        href="javascript: {}"><img
+                                                            src="https://labcloud2go.sharepoint.com/sites/AYoshiiDev/_catalogs/masterpage/assets/images/search.png"
+                                                            class="ms-srch-sb-searchImg" id="searchImg"
+                                                            style="opacity: 0;" alt="Search" /></a>
                                                     <div class="ms-qSuggest-container ms-shadow" id="AutoCompContainer">
                                                         <div id="ctl00_SmallSearchInputBox1_csr_AutoCompList"></div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div componentid="ctl00_SmallSearchInputBox1_csr" id="ctl00_SmallSearchInputBox1_csr"></div>
+                                        <div componentid="ctl00_SmallSearchInputBox1_csr"
+                                            id="ctl00_SmallSearchInputBox1_csr"></div>
                                         <div id="ctl00_SmallSearchInputBox1"></div>
                                         <div class="ms-clear"></div>
                                     </div>
@@ -203,65 +221,78 @@ Para criar a página mestra diretamente a partir desse arquivo HTML, basta edita
                 <div class="container">
                     <div class="footer-area">
 
-                         <div class="footer-col">
+                        <div class="footer-col">
                             <h3>Redes Sociais Grupo A.Yoshii</h3>
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="https://www.instagram.com/institutoa.yoshii"><img src="assets/images/icon-instagram.jpg" alt="" /> Instituto A.Yoshii</a>
+                                        <a href="https://www.instagram.com/institutoa.yoshii"><img
+                                                src="assets/images/icon-instagram.jpg" alt="" /> Instituto A.Yoshii</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/a.yoshiiengenharia"><img src="assets/images/icon-instagram.jpg" alt="" /> A.Yoshii Engenharia</a>
+                                        <a href="https://www.instagram.com/a.yoshiiengenharia"><img
+                                                src="assets/images/icon-instagram.jpg" alt="" /> A.Yoshii Engenharia</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/construtorayticon"><img src="assets/images/icon-instagram.jpg" alt="" /> Construtora Yticon
+                                        <a href="https://www.instagram.com/construtorayticon"><img
+                                                src="assets/images/icon-instagram.jpg" alt="" /> Construtora Yticon
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/company/a-yoshii-engenharia"><img src="assets/images/icon-linkedin.jpg" alt="" /> A.Yoshii Engenharia</a>
+                                        <a href="https://www.linkedin.com/company/a-yoshii-engenharia"><img
+                                                src="assets/images/icon-linkedin.jpg" alt="" /> A.Yoshii Engenharia</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/company/yticon"><img src="assets/images/icon-linkedin.jpg" alt="" /> Construtora Yticon</a>
+                                        <a href="https://www.linkedin.com/company/yticon"><img
+                                                src="assets/images/icon-linkedin.jpg" alt="" /> Construtora Yticon</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/user/ayoshiiengenharia/videos"><img src="assets/images/icon-youtube.jpg" alt="" /> A.Yoshii Engenharia</a>
+                                        <a href="https://www.youtube.com/user/ayoshiiengenharia/videos"><img
+                                                src="assets/images/icon-youtube.jpg" alt="" /> A.Yoshii Engenharia</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/user/yticonconstrutora/videos"><img src="assets/images/icon-youtube.jpg" alt="" /> Construtora Yticon</a>
+                                        <a href="https://www.youtube.com/user/yticonconstrutora/videos"><img
+                                                src="assets/images/icon-youtube.jpg" alt="" /> Construtora Yticon</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
-                         <div class="footer-col">
+                        <div class="footer-col">
                             <h3>Redes Sociais Grupo A.Yoshii</h3>
                             <nav>
                                 <ul>
                                     <li>
-                                        <a href="https://www.instagram.com/institutoa.yoshii"><img src="assets/images/icon-instagram.jpg" alt="" /> Instituto A.Yoshii</a>
+                                        <a href="https://www.instagram.com/institutoa.yoshii"><img
+                                                src="assets/images/icon-instagram.jpg" alt="" /> Instituto A.Yoshii</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/a.yoshiiengenharia"><img src="assets/images/icon-instagram.jpg" alt="" /> A.Yoshii Engenharia</a>
+                                        <a href="https://www.instagram.com/a.yoshiiengenharia"><img
+                                                src="assets/images/icon-instagram.jpg" alt="" /> A.Yoshii Engenharia</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.instagram.com/construtorayticon"><img src="assets/images/icon-instagram.jpg" alt="" /> Construtora Yticon
+                                        <a href="https://www.instagram.com/construtorayticon"><img
+                                                src="assets/images/icon-instagram.jpg" alt="" /> Construtora Yticon
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/company/a-yoshii-engenharia"><img src="assets/images/icon-linkedin.jpg" alt="" /> A.Yoshii Engenharia</a>
+                                        <a href="https://www.linkedin.com/company/a-yoshii-engenharia"><img
+                                                src="assets/images/icon-linkedin.jpg" alt="" /> A.Yoshii Engenharia</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.linkedin.com/company/yticon"><img src="assets/images/icon-linkedin.jpg" alt="" /> Construtora Yticon</a>
+                                        <a href="https://www.linkedin.com/company/yticon"><img
+                                                src="assets/images/icon-linkedin.jpg" alt="" /> Construtora Yticon</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/user/ayoshiiengenharia/videos"><img src="assets/images/icon-youtube.jpg" alt="" /> A.Yoshii Engenharia</a>
+                                        <a href="https://www.youtube.com/user/ayoshiiengenharia/videos"><img
+                                                src="assets/images/icon-youtube.jpg" alt="" /> A.Yoshii Engenharia</a>
                                     </li>
                                     <li>
-                                        <a href="https://www.youtube.com/user/yticonconstrutora/videos"><img src="assets/images/icon-youtube.jpg" alt="" /> Construtora Yticon</a>
+                                        <a href="https://www.youtube.com/user/yticonconstrutora/videos"><img
+                                                src="assets/images/icon-youtube.jpg" alt="" /> Construtora Yticon</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
-
                         <div class="footer-col">
                             <h3>Telefones</h3>
                             <nav>
@@ -285,7 +316,7 @@ Para criar a página mestra diretamente a partir desse arquivo HTML, basta edita
         var btnToggleRibbon = document.getElementById("ayBtnToolBar");
 
         var statusRibbon = false;
-        btnToggleRibbon.onclick = function() {
+        btnToggleRibbon.onclick = function () {
 
             if (statusRibbon == false) {
                 document.getElementById("ms-designer-ribbon").style.display = "initial";
